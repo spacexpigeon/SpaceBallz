@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://clunpgkwtuccx"]
+
+[ext_resource type="Texture2D" uid="uid://r3mi47hf5b1m" path="res://Assets/cel.png" id="1_or0ij"]
+[ext_resource type="Script" path="res://Sceny/CollisionShape2D.gd" id="2_x30y1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36x7d"]
+size = Vector2(30, 30)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_or0ij")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_36x7d")
+script = ExtResource("2_x30y1")
